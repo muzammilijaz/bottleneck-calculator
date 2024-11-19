@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.calculator-container, .admin-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select, input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result strong {
+    color: #2e7d32;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    margin: 15px 0;
+    height: 25px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    text-align: right;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+}
+
+.message {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.message.success {
+    color: #2e7d32;
+}
+
+.message.moderate {
+    color: #ffa000;
+}
+
+.message.warning {
+    color: #d32f2f;
+}
